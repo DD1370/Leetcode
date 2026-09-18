@@ -31,15 +31,12 @@ class Solution {
         int j=n-1;
         for(;j>=i+1;j--){
             if(nums[j]>nums[i]){
-                int temp=nums[i];
-            nums[i]=nums[j];
-            nums[j]=temp;
                 break;
             }
             
         }
         
-        //swap(nums,i,j);
+        swap(nums,i,j);
         rev(nums,i+1,n-1);
         }
     }
