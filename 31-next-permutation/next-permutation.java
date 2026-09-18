@@ -25,10 +25,11 @@ class Solution {
         }
         if(i==-1){
             rev(nums,0,n-1);
-            return;
+            //return;
         }
+        else{
         int j=n-1;
-        for(;j>=0;j--){
+        for(;j>=i+1;j--){
             if(nums[j]>nums[i]){
                 int temp=nums[i];
             nums[i]=nums[j];
@@ -37,7 +38,9 @@ class Solution {
             }
             
         }
+        
         //swap(nums,i,j);
         rev(nums,i+1,n-1);
+        }
     }
 }
