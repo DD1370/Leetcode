@@ -23,7 +23,7 @@ class Solution {
                 break;
             }
         }
-        if(i<0){
+        if(i==-1){
             rev(nums,0,n-1);
             return;
         }
