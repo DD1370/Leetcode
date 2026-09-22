@@ -10,7 +10,7 @@ class Solution {
         Collections.sort(chars,(a,b)->(freq.get(b)-freq.get(a)));
         //building string
         StringBuilder sb=new StringBuilder();
-        for(Object c:chars){
+        for(char c:chars){
             for(int i=0;i<freq.get(c);i++){
                 sb.append(c);
             }
