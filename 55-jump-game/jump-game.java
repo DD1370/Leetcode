@@ -8,6 +8,7 @@ class Solution {
                 return false;
             }
             maxJump=Math.max(maxJump,i+nums[i]);
+            if(maxJump>=n-1) return true;
             i++;
         }
         return true;
