@@ -13,10 +13,11 @@ class Solution {
                 }
             }
         }
-        while(!st.isEmpty()){
+        /*while(!st.isEmpty()){
             res+=1;
             st.pop();
-        }
+        }*/
+        if(!st.isEmpty()) res+=st.size();
         return res;
     }
 }
