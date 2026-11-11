@@ -1,0 +1,9 @@
+with totalAmount as(
+    select account, sum(amount) over(partition by account order by account) as balance
+    from Transactions
+)
+select distinct name ,balance 
+from users u 
+join  totalAmount t 
+on u.account = t.account
+where balance > 10000
